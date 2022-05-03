@@ -1,11 +1,26 @@
-export const markComplete = () => {
-  return {};
+import {
+  deleteTodoActionCreator,
+  markCompleteActionCreator,
+  markIncompleteActionCreator,
+} from "types/actionCreateType";
+
+export const markComplete: markCompleteActionCreator = (todo) => {
+  return {
+    type: "MARK_COMPLETE",
+    todo,
+  };
 };
 
-export const markInComplete = () => {
-  return {};
+export const markIncomplete: markIncompleteActionCreator = (todo) => {
+  return {
+    type: "MARK_INCOMPLETE",
+    todo,
+  };
 };
 
-export const deleteTodo = () => {
-  return {};
+export const deleteTodo: deleteTodoActionCreator = (todo) => {
+  return {
+    type: "DELETE_TODO",
+    todo,
+  };
 };
