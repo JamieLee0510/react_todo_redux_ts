@@ -6,7 +6,6 @@ import {
   markIncompleteAction,
 } from "types/actionType";
 import { complete } from "types/storeType";
-import { incomplete } from "types/storeType";
 
 const initialState: complete = [];
 
